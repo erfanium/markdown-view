@@ -1,14 +1,14 @@
 const toString = (v: string | number | boolean) => v.toString()
 
-export function H1(...words: (string | number | boolean)[]) {
+export function h1(...words: (string | number | boolean)[]) {
    console.log('#', ...words.map(toString))
 }
 
-export function H2(...words: (string | number | boolean)[]) {
+export function h2(...words: (string | number | boolean)[]) {
    console.log('##', ...words.map(toString))
 }
 
-export function H3(...words: (string | number | boolean)[]) {
+export function h3(...words: (string | number | boolean)[]) {
    console.log('###', ...words.map(toString))
 }
 

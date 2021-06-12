@@ -1,4 +1,4 @@
-import { H1, H2, tableHead, tableRow } from "../mod.ts";
+import { h1, h2, tableHead, tableRow } from "../mod.ts";
 
 type F = (x: number, y: number) => number
 
@@ -86,16 +86,16 @@ const problems: Problem[] = [
 ];
 
 problems.forEach((prob, i) => {
-  H1("Exercise", i);
-  H2("Simple", "h = 0.1");
-  simple(prob["f"], prob["x0"], prob["y0"], 0.1, prob["x"]);
+  h1("Exercise", i);
+  h2("Simple", "h = 0.1");
+  simple(prob.f, prob.x0, prob.y0, 0.1, prob.x);
 
-  H2("Simple", "h = 0.05");
-  simple(prob["f"], prob["x0"], prob["y0"], 0.05, prob["x"]);
+  h2("Simple", "h = 0.05");
+  simple(prob.f, prob.x0, prob.y0, 0.05, prob.x);
 
-  H2("Improved", "h = 0.1");
-  improved(prob["f"], prob["x0"], prob["y0"], 0.1, prob["x"]);
+  h2("Improved", "h = 0.1");
+  improved(prob.f, prob.x0, prob.y0, 0.1, prob.x);
 
-  H2("Improved", "h = 0.05");
-  improved(prob["f"], prob["x0"], prob["y0"], 0.05, prob["x"]);
+  h2("Improved", "h = 0.05");
+  improved(prob.f, prob.x0, prob.y0, 0.05, prob.x);
 });
